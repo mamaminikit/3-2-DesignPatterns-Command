@@ -10,7 +10,7 @@ public class Order { /* Invoke */
 
     public void cancelOrder(Control control){
         if (orderList.size() != 0)
-            orderList.remove(orderList.indexOf(orderList));
+            orderList.remove(orderList.indexOf(control));
     }
 
     public void startControl() { /* Call The Command */

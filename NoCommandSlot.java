@@ -1,9 +1,15 @@
 /* Kitthanya Teachanontkullawat (Mine) 64050027 */
-public class Slot3 implements Control {
+public class NoCommandSlot implements Control {
     /* No Receiver */
+    int slot;
+
+    public NoCommandSlot(int slot) {
+        this.slot = slot;
+    }
+
     @Override
     public void on() {
-        System.out.println("test one unavailable slot, slot 3");
+        System.out.println("test one unavailable slot, slot " + slot);
         System.out.println("On button No command is assigned to this slot");
     }
 
